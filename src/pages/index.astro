@@ -1,8 +1,21 @@
 ---
 import Layout from '../layout/HomePage.astro'
-import Header from '../components/Header.astro'
 ---
 
 <Layout title="Homepage">
-	<Header/>
+	<h2>HomePage</h2>
+	<section class="curved"></section>
 </Layout>
+
+<style>
+	.curved {
+		position: relative;
+		background-image: url('https://images.pexels.com/photos/1188470/pexels-photo-1188470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+		background-size: cover;
+		background-position: center;
+		box-shadow: 1px 1px 50px gray;
+		height: 80dvh;
+		border-bottom-left-radius: 50% 10%;
+		border-bottom-right-radius: 50% 10%;
+	}
+</style>
