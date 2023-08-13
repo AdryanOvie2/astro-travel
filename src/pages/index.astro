@@ -3,7 +3,6 @@ import Layout from '../layout/HomePage.astro'
 ---
 
 <Layout title="Homepage">
-	<h2>HomePage</h2>
 	<section class="curved"></section>
 </Layout>
 
@@ -11,11 +10,23 @@ import Layout from '../layout/HomePage.astro'
 	.curved {
 		position: relative;
 		background-image: url('https://images.pexels.com/photos/1188470/pexels-photo-1188470.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+		background-color: rgba(0, 0, 0, 0.9);
 		background-size: cover;
 		background-position: center;
 		box-shadow: 1px 1px 50px gray;
 		height: 80dvh;
-		border-bottom-left-radius: 50% 10%;
-		border-bottom-right-radius: 50% 10%;
+		border-bottom-left-radius: 40% 8%;
+		border-bottom-right-radius: 40% 8%;
+		
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0));
+			z-index: 1; /* Colocar el pseudo-elemento detrás del contenido */
+		}
 	}
 </style>
