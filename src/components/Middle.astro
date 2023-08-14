@@ -5,24 +5,10 @@ const { textBack, textFront } = Astro.props;
 
 <section class="middle">
     <TextBack textBack={textBack} textFront={textFront}/>			
-    <div class="text-description">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo eligendi impedit non. Omnis, in tempore?</p>
-    </div>
 </section>
 
 <style>
     .middle{
 		margin: 5rem 0;
-	}
-	
-	.text-description{
-        width: 100%;
-        & p{
-            text-align: center;
-            text-wrap: balance;
-            color: lightslategray;
-            width: 75ch;
-            margin: auto;
-        }		
 	}
 </style>
