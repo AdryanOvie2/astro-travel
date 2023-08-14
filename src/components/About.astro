@@ -1,31 +1,59 @@
 ---
-
+import MyImage from "../assets/pexels-pixabay-531602.jpg";
+import Link from './Link.astro'
 ---
 <section class="about">
     <div class="column-1">
         <h3>About Us</h3>
         <h4>lorem adafaf wrgfwef </h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatibus est quae, adipisci corporis dignissimos cupiditate non voluptatum nostrum tempore magni vero incidunt assumenda ea.</p>
-        <a href="#">Ver más</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatibus est quae, adipisci corporis dignissimos cupiditate non voluptatum nostrum consectetur adipisicing elit</p>
+        <div class="container-button">
+            <Link link="#" name="Ver más"/>
+        </div>
     </div>
     <figure class="column-2">
-        <img src="" alt="">
+        <img src={MyImage} loading="lazy" alt="image with sunshine">
     </figure>
 </section>
 
 <style>
     .about{
-		width: 100%;
+        padding: 1rem;
+		width: 80%;
+        margin: auto;
 		display: grid;
 		grid-template-rows: 1fr;
 		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
+		gap: 3rem;
+
+        & .column-1{
+            display: flex;
+            flex-direction: column;
+        }
 
 		& .column-1 h3{
 			text-transform: uppercase;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
 		}
 		& .column-1 h4{
 			text-transform: uppercase;
+            font-size: 1.3rem;
 		}
+        & .column-1 p{
+            max-width: 75ch;
+            text-wrap: balance;
+        }
+        & .container-button{
+            margin-top: 1rem;
+        }
 	}
+    img{
+        width: 100%;
+        height: 80%;
+        border-radius: 8px;
+        object-fit: cover;
+        border-bottom-left-radius: 40% 8%;
+		border-bottom-right-radius: 40% 8%;
+    }
 </style>
