@@ -1,0 +1,51 @@
+---
+import Link from './Link.astro'
+const { link, title, description, time, src, alt } = Astro.props
+---
+
+<div class="card">
+    <header>
+        <img src={src} alt={alt}>
+        <div class="container-link">
+            <Link class="link" link={link} name="Leer más"/>
+        </div>
+    </header>
+    <div class="content">
+        <h3>{title}</h3>
+        <p>{description}</p>
+    </div>
+    <footer>
+        <p class="time">{time}</p>
+    </footer>
+</div>
+
+<style>
+    .card{
+        position: relative;
+        box-shadow: 0 0 50px lightgray;
+        flex-basis: 50%;
+
+        & .container-link{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            & .link{
+                margin-top: -1.5rem;
+            }
+        }
+    }
+    img{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)),url('../assets/pexels-christine-renard-615060.jpg');
+		background-size: cover;
+		background-position: top;
+		border-bottom-left-radius: 40% 8%;
+		border-bottom-right-radius: 40% 8%;
+        object-fit: cover;
+        width: 100%;
+        aspect-ratio: 4/3;
+    }
+    .content{
+        padding: 1rem;
+    }
+</style>

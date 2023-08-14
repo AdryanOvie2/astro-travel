@@ -1,4 +1,41 @@
 ---
-
+import Card from './Card.astro'
+import Img1 from '../assets/pexels-christine-renard-615060.jpg'
+import Img2 from '../assets/pexels-frans-van-heerden-625409.jpg'
+import Img3 from '../assets/pexels-nextvoyage-1518500.jpg'
 ---
 
+<section class="blog">
+    <Card 
+        link="#" 
+        name="Post 1" 
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem nisi blanditiis iure quia quod officia possimus nobis reiciendis minus."
+        src={Img1}
+        alt="image"
+    />
+    <Card 
+        link="#" 
+        name="Post 1" 
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem nisi blanditiis iure quia quod officia possimus nobis reiciendis minus."
+        src={Img2}
+        alt="image"
+    />
+    <Card 
+        link="#" 
+        name="Post 1" 
+        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem nisi blanditiis iure quia quod officia possimus nobis reiciendis minus."
+        src={Img3}
+        alt="image"
+    />
+</section>
+
+<style>
+    .blog{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        gap: 1rem;
+    }
+</style>
