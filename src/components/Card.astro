@@ -1,5 +1,4 @@
 ---
-import Link from './Link.astro'
 const { link, title, description, time, src, alt } = Astro.props
 ---
 
@@ -24,6 +23,7 @@ const { link, title, description, time, src, alt } = Astro.props
         position: relative;
         box-shadow: 0 0 50px lightgray;
         flex-basis: 50%;
+        border-radius: 5px;
 
         & .content{
             display: flex;
@@ -54,6 +54,8 @@ const { link, title, description, time, src, alt } = Astro.props
         background: linear-gradient(to bottom, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)),url('../assets/pexels-christine-renard-615060.jpg');
 		background-size: cover;
 		background-position: top;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
 		border-bottom-left-radius: 40% 8%;
 		border-bottom-right-radius: 40% 8%;
         object-fit: cover;

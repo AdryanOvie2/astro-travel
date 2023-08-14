@@ -3,37 +3,47 @@ import Card from './Card.astro'
 import Img1 from '../assets/pexels-christine-renard-615060.jpg'
 import Img2 from '../assets/pexels-frans-van-heerden-625409.jpg'
 import Img3 from '../assets/pexels-nextvoyage-1518500.jpg'
+import Link from './Link.astro'
 ---
 
 <section class="blog">
-    <Card 
+    <div class="cards">
+        <Card 
         link="#" 
         title="Post 1" 
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem"
         src={Img1}
         alt="image"
         time="15 augustus 2023"
-    />
-    <Card 
-        link="#" 
-        title="Post 2" 
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem"
-        src={Img2}
-        alt="image"
-        time="15 augustus 2023"
-    />
-    <Card 
-        link="#" 
-        title="Post 3" 
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem"
-        src={Img3}
-        alt="image"
-        time="15 augustus 2023"
-    />
+        />
+        <Card 
+            link="#" 
+            title="Post 2" 
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem"
+            src={Img2}
+            alt="image"
+            time="15 augustus 2023"
+        />
+        <Card 
+            link="#" 
+            title="Post 3" 
+            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo exercitationem"
+            src={Img3}
+            alt="image"
+            time="15 augustus 2023"
+        />
+    </div>
+    <Link link="#" name="Ir al Blog"/>
 </section>
 
 <style>
     .blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    .cards{
         width: 80%;
         height: auto;
         margin: auto;
