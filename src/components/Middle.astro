@@ -1,0 +1,27 @@
+---
+import TextBack from '../components/Text-back.astro'
+---
+
+<section class="middle">
+    <TextBack textBack="travel partner" textFront="Our travel partner"/>			
+    <div class="text-description">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo eligendi impedit non. Omnis, in tempore?</p>
+    </div>
+</section>
+
+<style>
+    .middle{
+		margin: 5rem 0;
+	}
+	
+	.text-description{
+        width: 100%;
+        & p{
+            text-align: center;
+            text-wrap: balance;
+            color: lightslategray;
+            width: 75ch;
+            margin: auto;
+        }		
+	}
+</style>

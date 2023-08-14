@@ -2,41 +2,19 @@
 import Layout from '../layout/HomePage.astro'
 import Hero from '../components/Hero.astro'
 import Services from '../components/Services.astro'
+import Middle from '../components/Middle.astro'
 ---
 
 <Layout title="Homepage">
 	<Hero/>
 	<Services/>
-	<section class="partners">
-		<h2>Lorem ipsum dolor sit amet.</h2>
-		<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo eligendi impedit non. Omnis, in tempore?</p>
+	<Middle/>
+	<section class="">
+		
 	</section>
-	<section class="about">
-		<div class="column-1">
-			<h3>About Us</h3>
-			<h4>lorem adafaf wrgfwef </h4>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatibus est quae, adipisci corporis dignissimos cupiditate non voluptatum nostrum tempore magni vero incidunt assumenda ea.</p>
-			<a href="#">Ver más</a>
-		</div>
-		<figure class="column-2">
-			<img src="" alt="">
-		</figure>
-	</section>
+	
 </Layout>
 
 <style>
-	.about{
-		width: 100%;
-		display: grid;
-		grid-template-rows: 1fr;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-
-		& .column-1 h3{
-			text-transform: uppercase;
-		}
-		& .column-1 h4{
-			text-transform: uppercase;
-		}
-	}
+	
 </style>
