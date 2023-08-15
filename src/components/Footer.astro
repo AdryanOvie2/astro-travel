@@ -1,7 +1,39 @@
 ---
-
+import Logo from "./Logo.astro";
+import SocialMedia from "./SocialMedia.astro";
 ---
 
 <footer>
-    
+    <section class="footer">
+        <div><Logo/></div>
+        <div>2</div>
+        <div></div>
+        <div>Obten el viaje de tus sueños</div>
+        <div>Páginas</div>
+        <div>Sobre Nosotros</div>
+        <div>Servicios</div>
+        <div>email@email.com</div>
+        <div>9</div>
+        <div>Precios</div>
+        <div>Blog</div>
+        <div><SocialMedia/></div>
+    </section>
 </footer>
+
+<style>
+    footer{
+        /* width: 100%; */
+        padding: 1rem 0;
+        background-color: #000;
+    }
+    .footer {
+        margin: 0 auto;
+        color: white;
+        width: 80%;
+
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+</style>
