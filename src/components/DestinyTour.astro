@@ -1,4 +1,29 @@
 ---
-
+import MiniCard from "./MiniCard.astro";
+import carretera from '../assets/pexels-simon-berger-1118448.jpg'
 ---
 
+<section class="destiny">
+    <div class="miniCards">
+        <MiniCard city="London" img={carretera} alt="imagen de destino" link="#"/>
+        <MiniCard city="London" img={carretera} alt="imagen de destino" link="#"/>
+        <MiniCard city="London" img={carretera} alt="imagen de destino" link="#"/>
+    </div>
+</section>
+
+<style>
+    .destiny{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+    }
+    .miniCards{
+        width: 80%;
+        height: auto;
+        margin: auto;
+        padding: 1rem;
+        display: flex;
+        gap: 2.5rem;
+    }
+</style>
