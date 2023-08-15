@@ -1,0 +1,31 @@
+---
+import Link from './Link.astro'
+---
+
+<section class="newsletter">
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <h3>Se miembro de nuestra newsletter y recibe todas las novededas turisticas</h3>
+    <div class="container-link">
+        <Link link="#" name="Recibir noticias"/>
+    </div>
+</section>
+
+<style>
+    .newsletter{
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        
+        & p{
+            color: var(--orange);
+        }
+        & h3{
+            font-size: 1.5rem;
+            text-align: center;
+            max-width: 50ch;
+        }
+    }
+</style>
